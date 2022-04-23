@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.google.com/noto/specimen/Noto+Serif') format('truetype');
+  }
+
+header{
+    background-color: rgb(157, 99, 17);
+    height: 12vh;
+    justify-content: center;
+    margin: 0px;
+    padding: 2vh;
+}
+
+#button{
+    display: flex;
+    float: right;
+    margin-top: 30px;
+    margin-right:10px;   
+
+}
+#button li{
+    list-style: none;
+    margin-left: 20px;
+}
+#button a{
+    text-decoration: none;
+    color: white;
+   
+    padding: 1em;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#button a:hover{
+    opacity: 20px;
+    background-color: var(--cor--bg--dark-hover);
+}
+
+header i::after{
+    content: 'Bom Burguer';
+    font-family: sans-serif;
+}
+header i{
+    float: left;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: sandybrown;
+    
+}
+
+
+
+.container{
+    background-image: url(image/16-hamburguer.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    clear: both;
+
+}
+.container section{
+   background-color: rgba(22, 22, 22, 0.596);
+    height: 60vh;
+    display: flex;
+    width:100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 100px;
+
+}
+section h1{
+    color: yellow;
+    font-family: sans-serif;
+    font-size: 3em;
+}
+section p{
+    padding: 10vh;
+    margin: 10px 40px ;
+    color: white;
+    font-size: 20px;
+}
+.sobre{
+    width: 100%;
+    
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url(image/What-Else-Mag-Gastronomia-Hamburguerias-Tematicas-Em-Sao-Paulo-Cover-e1550203724194.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+
+}
+.sobre-content{
+    width: 80vw;
+    text-align: center;
+    background-color: rgba(255, 68, 0, 0.594);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+}
+.sobre-content h1{
+    margin: 20px;
+    padding: 20px;
+    color:yellow;
+    font-size: 3em;
+}
+.sobre-content p{
+    margin: 20px;
+    padding: 40px;
+    color: white;
+    font-size: 30px;
+}
+.cardapio{
+    
+    background-image: url(image/20180524-materia-hamburguer.jpg) ;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+
+}
+.cardapio h1{
+    color: yellow;
+    padding: 20px;
+    font-size: 3em;
+    
+}
+#produto{
+    display: grid;
+    grid-template: 25vw 25vw;
+    grid-template-areas: 'nome preco';
+    margin-top: 40px;
+    margin-left: 20vw;
+    border: 1px solid white;
+    margin-right: 20vw;
+    background-color: rgba(22, 22, 22, 0.596);
+    
+}
+#nome{padding: 20px;
+    grid-area: 'nome';
+    color: white;
+    border-right: 1px solid white;
+}
+#preco{
+    padding: 20px;
+    grid-area: 'preco';
+    color: white;
+    
+}
+#produto li{
+    border-bottom: 1px solid white;
+    margin:10px 20px;
+    list-style: none;
+    
+}
+#produto #preco li{
+    border-bottom: 1px solid white;
+    margin:20px;
+    list-style: none;
+    text-align: right;
+}
+.contato{
+    background-image: url(image/c30af6ca108245b91e171ab6ce6c50e2.jpg);
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.contato h1{
+    color: yellow;
+    padding: 20px;
+    font-size: 3em;
+}
+#redes{
+    display: flex;
+    margin-top: 20px;
+    
+
+}
+#pedir{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: rgb(6, 171, 6);
+    width: 10vw;
+    color: white;
+    font-size: 1em;
+    transition: 0.5s;
+
+}
+#pedir:hover{
+    transform: scale(1.1);
+}
+#maps iframe{
+    border: 2px solid black;
+    box-shadow: 10px 10px 8px black;
+}
+#redes a{
+    font-size: 3em;
+    color: white;
+    
+    margin-left:30px ;
+    margin-bottom: 2vh;
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: brown;
+    padding: 20px;
+}
+.glide{
+    width: 100vw;
+    height: 40vh;
+}
+
+.glide img{
+    width: 20vw;
+    height: 30vh;
+    transition: 0.5s;
+    border: 7px solid rgba(249, 178, 36, 0.739);
+   
+    
+    
+}
+.glide p{
+    color: yellow;
+}
+.glide__slides li:hover{
+    transform: scale(1.2);
+
+   
+}
+
+
+.glide__slides li{
+    
+    padding: 20px;
+    margin: 20px;
+  
+    transition: 0.5s;
+    content: 'ola';
+}

@@ -1,0 +1,161 @@
+@media screen and (max-width: 699px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('https://fonts.google.com/noto/specimen/Noto+Serif') format('truetype');
+      }
+      header{
+        background-color:rgb(157, 99, 17);
+        list-style: none;
+        padding: 2vh;
+        height: 10vh;
+        margin-bottom: 0px;
+        display: flex;
+    }
+    #button{
+        display: flex;
+        height: 4vh;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+       
+        
+    
+    }
+    #button li{
+        list-style: none;
+        
+        width: auto;
+        
+        
+    }
+    #button a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        padding: 0.5em;
+        font-size: 15px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+    header i::after{
+        content: 'Bom Burguer';
+        font-family: sans-serif;
+        text-align: justify;
+        
+    }
+    header i{
+      
+        text-align: center;
+        font-size: 12px;
+        padding: 12px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: sandybrown;
+        
+    }
+    
+
+    
+    .container{
+        background-image: url(image/mobile/16-hamburguer.jpeg);
+        background-position: left;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+    }
+    .container section{
+        background-color: rgba(22, 22, 22, 0.596);
+         height: 80vh;
+         width:100vw;
+         display: flex;
+         text-align: center;
+         box-sizing: border-box;
+         
+     }
+     section h1{
+        color: yellow;
+        font-family: sans-serif;
+        font-size: 30px;
+        padding: 20px;
+    }
+    section p{
+        width: 50vw;
+       font-family: sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-top: 0px;
+        text-align: justify;
+        overflow: scroll;
+    }
+    .sobre{
+        width: 100%;
+        background-color: coral;
+        align-items: center;
+        box-sizing: border-box;
+        background-image: url(image/mobile/What-Else-Mag-Gastronomia-Hamburguerias-Tematicas-Em-Sao-Paulo-Cover-e1550203724194.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        box-sizing: border-box;
+        
+    
+    }   
+    .sobre-content{
+        width: 100%;
+        text-align: justify;
+        background-color: rgba(255, 68, 0, 0.594);
+        height: 80vh;
+       
+        text-align: center;
+    }  
+    .sobre-content h1{
+       
+        color:yellow;
+        font-size: 40px;
+        padding: 5px;
+    }
+    .sobre-content p{
+        overflow: scroll;
+        height: 60vh;
+        
+        color: white;
+        font-size: 20px;
+        overflow: scroll;
+    }
+    .cardapio{
+        background-image: url(image/20180524-materia-hamburguer.jpg) ;
+        
+        background-size:auto;
+        
+        background-attachment: fixed;
+      height: 50vh;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .cardapio h1{
+        color: yellow;
+        padding: 10px;
+        font-size: 1em;
+        
+    }
+    .cardapio img{
+        width: 50vw;
+        height: 30vh;
+    }
+    .cardapio button{
+        display: none;
+    }
+    
+      
+}

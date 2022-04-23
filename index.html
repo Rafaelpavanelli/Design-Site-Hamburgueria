@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="CSS/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="CSS/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="CSS/icon//favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/glide.js">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="CSS/style-desktop.css">
+    <link rel="stylesheet" href="CSS/style-mobile.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <title>Bom-Burger</title>
+</head>
+
+<body>
+    <!--Area do Menu superior-->
+    <header>
+        <div id="logo">
+        <i class="fa-solid fa-burger"></i>
+    </div>
+
+        <div id="button">
+            <li><a href="#cardapio" >Cardapio</a></li>
+            <li><a href="#sobre" >Sobre</a></li>
+            <li><a href="#contato" >contato</a></li>
+        </div>
+    </header>
+    <!--Area do Menu sobre as inteções do local-->
+    <div class="container">
+        <section>
+            <h1>O melhor burger da Região</h1>
+            <p>Tentamos Diariamente trazer a experiencia mais agradavél a todos os clientes, fornecendo comidas de qualidade
+                e um atendimento de qualidade.
+                Nos tentamos diariamente nos aperfeiçoar para estarmos sempre por dentro das novas tendencias culinarias na area 
+                do fast-food e aplica-las em nossa cozinha com o intuito de sempre agradar os clientes.
+            </p>
+        </section>
+    </div>
+    <div class="sobre" id="sobre">
+        <div class="sobre-content">
+            <h1>Sobre</h1>
+            <p>Criada em 1960, a hamburgueria Bom-Buguer tem sempre evoluindo, recebendo dezenas de premios como "Hamburguer-de-mel" que 
+                foi o premio fornecido por termos os hamburguer gourmett mais deliciosos de toda a região.
+                O criador C.Vlad foi o inovador do fast-food fornecendo um atendimento que deixava os clientes salivando de vontade
+                de atacar um delicioso hamburguer gourmett, usando carnes de qualidade excepcional e materias de qualidade de primeira, 
+                sendo seus vegetais sendo plantado em sua propria fazenda.
+            </p>
+        </div>
+    </div>
+
+   
+    <div class="cardapio" id='cardapio'>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="CSS/image/hamburguer2.jpg" alt=""> <p>X-PHP</p></li>
+                <li class="glide__slide"><img src="CSS/image/hamburguer3.jpg" alt=""> <p>X-Java</p></li>
+                <li class="glide__slide"><img src="CSS/image/hamburguer1.jfif" alt=""> <p>X-Python</p></li>
+                <li class="glide__slide"><img src="CSS/image/hamburguer3.jpg" alt=""> <p>X-Cobol</p></li>
+                <li class="glide__slide"><img src="CSS/image/hamburguer2.jpg" alt=""> <p>X-SQL</p></li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div> 
+          </div>
+         
+           <button id="pedir">
+            pedir 
+     </button>
+        </div>
+      
+
+
+
+    </div>
+    <div class="contato" id="contato">
+        <div id="maps">
+            <h1>Localização</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d875240.183466564!2d36.55650346118692!3d31.02884155679457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1505db618d64e7fb%3A0xb7f2f4cbe28534e2!2sJafr%20Sub-District%2C%20Jord%C3%A2nia!3m2!1d30.317520499999997!2d36.1751401!5e0!3m2!1spt-BR!2sbr!4v1650327431115!5m2!1spt-BR!2sbr"
+                width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="redes">
+        <div id="facebook">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div id="twitter">
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+        </div>
+        <div id="instagram">
+           <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2022 Rafael.Pavanelli</p>
+        
+    </footer>
+
+
+
+
+
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+          const config={
+          type: 'carousel',
+         
+          autoplay: 2000,
+          breakpoints:{
+              600:{
+                  perView:2
+              },
+              1920:{
+                  perView:3
+              }
+          }
+
+      }
+      new Glide('.glide',config).mount()
+    
+    </script>
+    
+    
+    <script src="https://kit.fontawesome.com/b1dd2ee08a.js" crossorigin="anonymous"></script>
+    <script>
+        
+       
+    $('header a').on("click",function(e) {
+        e.preventDefault();
+        var id=$(this).attr('href');
+        console.log(id);
+        targetoffset=$(id).offset().top
+        $('html, body').animate({
+            scrollTop:(targetoffset)
+        },500)
+
+        
+   
+        
+    })
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
